@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://kit.fontawesome.com/fb35fb4919.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="icon" href="saving-icon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <title>SaveIT - Manage You're Finances</title>
+    </head>
+    <body onclick="">
+        <nav class="navbar">
+            <a href="" class="navbar-brand">SaveIT</a>
+            <div class="navbar-toggler" onclick="">
+                <span class="fas fa-bars icon"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Panel</a></li>
+                <li><a href="savings.html">Oszczędności</a></li>
+                <li><a href="goals.html">Cele</a></li>
+                <li><a href="login.html">Zaloguj</a></li>
+                <li class="nav-sm-settings">
+                    <a href="account.html">Ustawienia</a>
+                </li>
+                <div class="account-toggler">
+                    <li class="account-link"><a href="">Konto</a></li>
+                    <div class="container account-menu">
+                        <h4>Michał Latra</h4>
+                        <p>michalatra@gmail.com</p>
+                        <ul>
+                            <li>
+                                <a href="./account.html">
+                                    <span class="fas fa-sliders-h icon"></span>
+                                    <p>Ustawienia</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <main>
+            <div class="savings-grid">
+                <h2 class="container-header savings-header">
+                    Twoje Oszczędności
+                </h2>
+                <div class="container savings-stats-container">
+                    <h4 class="container-header">Podsumowanie oszczędności</h4>
+                    <p>Suma</p>
+                    <h3 class="main-savings-value">5000 PLN</h3>
+                    <p>W tym mieisącu</p>
+                    <h4>1200 PLN</h4>
+                    <p>W tym tygodniu</p>
+                    <h4>300 PLN</h4>
+                </div>
+                <div class="container savings-summary-container">
+                    <h4 class="container-header">Historia wpłat</h4>
+                </div>
+                <div class="container add-saving-container">
+                    <h4 class="container-header">Dodaj oszczędność</h4>
+                    <form class="form-container">
+                        <label class="form-label">Źródło</label>
+                        <div class="form-choice-button-container">
+                            <button>Budżet miesięczny</button>
+                            <button>Budżet tygodniowy</button>
+                            <button>Inne źródło</button>
+                        </div>
+                        <label for="saving-value" class="form-label"
+                            >Wartość</label
+                        >
+                        <input type="number" name="" id="saving-value" />
+                        <button class="btn submit-btn" type="submit">
+                            Dodaj
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Copytights &copy; TukanDesign</p>
+        </footer>
+    </body>
+</html>

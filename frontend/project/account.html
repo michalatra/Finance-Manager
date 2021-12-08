@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://kit.fontawesome.com/fb35fb4919.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="icon" href="saving-icon.svg" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <title>SaveIT - Manage You're Finances</title>
+    </head>
+    <body onclick="">
+        <nav class="navbar">
+            <a href="" class="navbar-brand">SaveIT</a>
+            <div class="navbar-toggler" onclick="">
+                <span class="fas fa-bars icon"></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Panel</a></li>
+                <li><a href="savings.html">Oszczędności</a></li>
+                <li><a href="goals.html">Cele</a></li>
+                <li><a href="login.html">Zaloguj</a></li>
+                <li class="nav-sm-settings">
+                    <a href="account.html">Ustawienia</a>
+                </li>
+                <div class="account-toggler">
+                    <li class="account-link"><a href="">Konto</a></li>
+                    <div class="container account-menu">
+                        <h4>Michał Latra</h4>
+                        <p>michalatra@gmail.com</p>
+                        <ul>
+                            <li>
+                                <a href="./account.html">
+                                    <span class="fas fa-sliders-h icon"></span>
+                                    <p>Ustawienia</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <main>
+            <div class="account-grid">
+                <h2 class="container-header settings-header">Ustawienia</h2>
+                <div class="container app-settings-container">
+                    <h4 class="container-header">Ustawienia aplikacji</h4>
+                    <form action="" class="form-container">
+                        <table class="settings-form-table">
+                            <tr>
+                                <td class="settings-form-label">
+                                    <label for="settings-budget-model"
+                                        >Model budżetu</label
+                                    >
+                                </td>
+                                <td colspan="2">
+                                    <div class="settings-form-list">
+                                        <img
+                                            class="language-icon"
+                                            src="week-icon.svg"
+                                            alt="Język Polski"
+                                        />
+                                        <img
+                                            class="language-icon"
+                                            src="month-icon.svg"
+                                            alt="English language"
+                                        />
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="settings-form-label">
+                                    <label for="settings-weekly-budget"
+                                        >Budżet tygodniowy</label
+                                    >
+                                </td>
+                                <td>
+                                    <input
+                                        value="400"
+                                        disabled
+                                        id="settings-weekly-budget"
+                                        type="text"
+                                        class="settings-input"
+                                    />
+                                </td>
+                                <td>
+                                    <sapn class="far fa-edit icon"></sapn>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="settings-form-label">
+                                    <label for="settings-monthly-budget"
+                                        >Budżet miesięczny</label
+                                    >
+                                </td>
+                                <td>
+                                    <input
+                                        value="1600"
+                                        disabled
+                                        id="settings-monthly-budget"
+                                        type="text"
+                                        class="settings-input"
+                                    />
+                                </td>
+                                <td>
+                                    <sapn class="far fa-edit icon"></sapn>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="settings-form-label">
+                                    <label for="settings-currency"
+                                        >Waluta</label
+                                    >
+                                </td>
+                                <td colspan="2">
+                                    <div class="settings-form-list">
+                                        <img
+                                            class="currency-icon"
+                                            src="poland-zloty-currency-symbol.svg"
+                                            alt="Język Polski"
+                                        />
+                                        <img
+                                            class="currency-icon"
+                                            src="dollar-currency-symbol.svg"
+                                            alt="Język Polski"
+                                        />
+                                        <img
+                                            class="currency-icon"
+                                            src="euro-currency-symbol.svg"
+                                            alt="Język Polski"
+                                        />
+                                        <img
+                                            class="currency-icon"
+                                            src="pound-symbol-variant.svg"
+                                            alt="Język Polski"
+                                        />
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="settings-form-label">
+                                    <label for="settings-language">Język</label>
+                                </td>
+                                <td colspan="2">
+                                    <div class="settings-form-list">
+                                        <img
+                                            class="language-icon"
+                                            src="poland-flag.svg"
+                                            alt="Język Polski"
+                                        />
+                                        <img
+                                            class="language-icon"
+                                            src="united-kingdom-flag.svg"
+                                            alt="English language"
+                                        />
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <button class="btn submit-btn">Zapisz</button>
+                    </form>
+                </div>
+                <div class="container account-settings-container">
+                    <h4 class="container-header">Ustawienia konta</h4>
+                    <form action="" class="form-container">
+                        <table class="settings-form-table">
+                            <tr>
+                                <td class="settings-form-label">
+                                    <label for="settings-name">Imię</label>
+                                </td>
+                                <td>
+                                    <input
+                                        value="Michał"
+                                        disabled
+                                        id="settings-name"
+                                        type="text"
+                                        class="settings-input"
+                                    />
+                                </td>
+                                <td>
+                                    <sapn class="far fa-edit icon"></sapn>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="settings-form-label">
+                                    <label for="settings-surname"
+                                        >Nazwisko</label
+                                    >
+                                </td>
+                                <td>
+                                    <input
+                                        value="Latra"
+                                        disabled
+                                        id="settings-surname"
+                                        type="text"
+                                        class="settings-input"
+                                    />
+                                </td>
+                                <td>
+                                    <sapn class="far fa-edit icon"></sapn>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="settings-form-label">
+                                    <label for="settings-username"
+                                        >Nazwa użytkownika</label
+                                    >
+                                </td>
+                                <td>
+                                    <input
+                                        value="michalatra"
+                                        disabled
+                                        id="settings-username"
+                                        type="text"
+                                        class="settings-input"
+                                    />
+                                </td>
+                                <td>
+                                    <sapn class="far fa-edit icon"></sapn>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="settings-form-label">
+                                    <label for="settings-email">Email</label>
+                                </td>
+                                <td>
+                                    <input
+                                        value="michalatra@gmail.com"
+                                        disabled
+                                        id="settings-email"
+                                        type="text"
+                                        class="settings-input"
+                                    />
+                                </td>
+                                <td>
+                                    <sapn class="far fa-edit icon"></sapn>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="settings-form-label">
+                                    <label for="settings-password">Hasło</label>
+                                </td>
+                                <td>
+                                    <input
+                                        value="400"
+                                        disabled
+                                        id="settings-password"
+                                        type="password"
+                                        class="settings-input"
+                                    />
+                                </td>
+                                <td>
+                                    <sapn class="far fa-edit icon"></sapn>
+                                </td>
+                            </tr>
+                        </table>
+                        <button type="submit" class="btn submit-btn">
+                            Zapisz
+                        </button>
+                    </form>
+                </div>
+                <div class="container delete-account-container">
+                    <h4 class="container-header">Usuwanie konta</h4>
+                    <p>
+                        Aby usunąć konto wpisz hasło oraz zatwierdź przyciskiem
+                        "Usuń moje kono"
+                    </p>
+                    <form action="" class="form-container">
+                        <table class="settings-form-table">
+                            <tr>
+                                <td class="settings-form-label">
+                                    <label for="delete-account-password"
+                                        >Hasło</label
+                                    >
+                                </td>
+                                <td>
+                                    <input
+                                        class="settings-input"
+                                        type="password"
+                                        id="delete-account-password"
+                                    />
+                                </td>
+                            </tr>
+                        </table>
+                        <button class="btn submit-btn">Usuń moje konto</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="site-footer">
+            <p>Copytights &copy; TukanDesign</p>
+        </footer>
+    </body>
+</html>

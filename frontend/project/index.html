@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/fb35fb4919.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="saving-icon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>SaveIT - Manage You're Finances</title>
+  </head>
+  <body onclick="">
+    <nav class="navbar">
+      <a href="" class="navbar-brand">SaveIT</a>
+      <div class="navbar-toggler" onclick="">
+        <span class="fas fa-bars icon"></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Panel</a></li>
+        <li><a href="savings.html">Oszczędności</a></li>
+        <li><a href="goals.html">Cele</a></li>
+        <li><a href="login.html">Zaloguj</a></li>
+        <li class="nav-sm-settings">
+          <a href="account.html">Ustawienia</a>
+        </li>
+        <div class="account-toggler">
+          <li class="account-link"><a href="">Konto</a></li>
+          <div class="container account-menu">
+            <h4>Michał Latra</h4>
+            <p>michalatra@gmail.com</p>
+            <ul>
+              <li>
+                <a href="./account.html">
+                  <span class="fas fa-sliders-h icon"></span>
+                  <p>Ustawienia</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </ul>
+    </nav>
+    <main>
+      <div class="panel-grid">
+        <div class="container time-container">
+          <div>
+            <p class="info-header-text">Dzień miesiąca</p>
+            <h3 class="info-header-value">6/31</h3>
+          </div>
+          <div class="chart time-chart">
+            <div class="chart-inside"></div>
+          </div>
+        </div>
+        <div class="container saldo-container">
+          <div class="saldo-section">
+            <div class="saldo-header">
+              <p class="info-header-text">Twój budżet</p>
+              <h2 class="info-header-value">1200 PLN</h2>
+            </div>
+          </div>
+          <div class="saldo-section">
+            <div class="saldo-stats">
+              <p class="saldo-stats-title">Pozostało</p>
+              <h3 class="saldo-stats-value">600 PLN</h3>
+              <p class="saldo-stats-title">Wydano</p>
+              <h3 class="saldo-stats-value">600 PLN</h3>
+            </div>
+            <div class="chart saldo-chart">
+              <div class="chart-inside"></div>
+            </div>
+          </div>
+        </div>
+        <div class="container category-summary-container">
+          <h4 class="container-header">Posdumowanie wydatków</h4>
+          <table class="category-table">
+            <tr>
+              <td class="category-icon">
+                <span class="fas fa-utensils icon food-icon"></span>
+              </td>
+              <td>
+                <p class="category-name">Posiłki</p>
+              </td>
+              <td>
+                <h4 class="category-value">200 PLN</h4>
+              </td>
+            </tr>
+            <tr>
+              <td class="category-icon">
+                <span class="fas fa-film icon entertainment-icon"></span>
+              </td>
+              <td>
+                <p class="category-name">Rozrywka</p>
+              </td>
+              <td>
+                <h4 class="category-value">350 PLN</h4>
+              </td>
+            </tr>
+            <tr>
+              <td class="category-icon">
+                <span class="fas fa-tshirt icon clothes-icon"></span>
+              </td>
+              <td>
+                <p class="category-name">Ubrania</p>
+              </td>
+              <td>
+                <h4 class="category-value">400 PLN</h4>
+              </td>
+            </tr>
+            <tr>
+              <td class="category-icon">
+                <span class="far fa-lightbulb icon lightbulb-icon"></span>
+              </td>
+              <td>
+                <p class="category-name">Rachunki</p>
+              </td>
+              <td>
+                <h4 class="category-value">550 PLN</h4>
+              </td>
+            </tr>
+            <tr>
+              <td class="category-icon">
+                <span class="far fa-keyboard icon electronics-icon"></span>
+              </td>
+              <td>
+                <p class="category-name">Elektronika</p>
+              </td>
+              <td>
+                <h4 class="category-value">550 PLN</h4>
+              </td>
+            </tr>
+            <tr>
+              <td class="category-icon">
+                <span class="fas fa-receipt icon others-icon"></span>
+              </td>
+              <td>
+                <p class="category-name">Pozostałe</p>
+              </td>
+              <td>
+                <h4 class="category-value">600 PLN</h4>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="container expenses-type-container">
+          <h4 class="container-header">Statystyki wydatków</h4>
+          <div class="expenses-layout">
+            <ul>
+              <li>
+                <span class="fas fa-utensils icon-bg food-icon"></span>
+              </li>
+              <li>
+                <span class="fas fa-film icon-bg entertainment-icon"></span>
+              </li>
+              <li>
+                <span class="fas fa-tshirt icon-bg clothes-icon"></span>
+              </li>
+            </ul>
+            <div class="chart expenses-type-chart">
+              <div class="chart-inside"></div>
+            </div>
+            <ul>
+              <li>
+                <span class="far fa-lightbulb icon-bg lightbulb-icon"></span>
+              </li>
+              <li>
+                <span class="far fa-keyboard icon-bg electronics-icon"></span>
+              </li>
+              <li>
+                <span class="fas fa-receipt icon-bg others-icon"></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container add-expense-container">
+          <h4 class="container-header">Dodaj wydatek</h4>
+          <form class="form-container">
+            <label for="expense-name" class="form-label">Nazwa</label>
+            <input type="text" name="" id="expense-name" />
+            <label class="form-label">Typ</label>
+            <div class="expense-list">
+              <span class="fas fa-utensils expense-icon food-icon"></span>
+              <span class="fas fa-film expense-icon entertainment-icon"></span>
+              <span class="fas fa-tshirt expense-icon clothes-icon"></span>
+              <span class="far fa-lightbulb expense-icon lightbulb-icon"></span>
+              <span
+                class="far fa-keyboard expense-icon electronics-icon"
+              ></span>
+              <span class="fas fa-receipt expense-icon others-icon"></span>
+            </div>
+            <label for="expense-value" class="form-label">Wartość</label>
+            <input type="number" name="" id="expense-value" />
+            <button class="btn submit-btn" type="submit">Dodaj</button>
+          </form>
+        </div>
+        <div class="transaction-table-container-container">
+          <div class="container transaction-table-container">
+            <table class="transaction-table">
+              <tr>
+                <th><h4>Nazwa</h4></th>
+                <th><h4>Typ</h4></th>
+                <th><h4>Wartość</h4></th>
+                <th class="close-column"></th>
+              </tr>
+              <tr>
+                <td>
+                  <p class="transaction-name">Lorem, ipsum dolor.</p>
+                </td>
+                <td class="transaction-icon">
+                  <span
+                    class="fas fa-utensils icon food-icon transaction-type"
+                  ></span>
+                </td>
+                <td>
+                  <h4 class="transaction-value">400 PLN</h4>
+                </td>
+                <td class="close-column">
+                  <span class="fas fa-times icon close-icon"></span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="transaction-name">Lorem, ipsum dolor.</p>
+                </td>
+                <td class="transaction-icon">
+                  <span class="fas fa-receipt icon others-icon"></span>
+                </td>
+                <td>
+                  <h4 class="transaction-value">600 PLN</h4>
+                </td>
+                <td class="close-column">
+                  <span class="fas fa-times icon close-icon"></span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="transaction-name">Lorem ipsum dolor sit.</p>
+                </td>
+                <td class="transaction-icon">
+                  <span class="far fa-keyboard icon electronics-icon"></span>
+                </td>
+                <td>
+                  <h4 class="transaction-value">500 PLN</h4>
+                </td>
+                <td class="close-column">
+                  <span class="fas fa-times icon close-icon"></span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="transaction-name">Lorem, ipsum dolor.</p>
+                </td>
+                <td class="transaction-icon">
+                  <span class="fas fa-tshirt icon clothes-icon"></span>
+                </td>
+                <td>
+                  <h4 class="transaction-value">300 PLN</h4>
+                </td>
+                <td class="close-column">
+                  <span class="fas fa-times icon close-icon"></span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="transaction-name">Lorem, ipsum dolor.</p>
+                </td>
+                <td class="transaction-icon">
+                  <span class="fas fa-tshirt icon clothes-icon"></span>
+                </td>
+                <td>
+                  <h4 class="transaction-value">300 PLN</h4>
+                </td>
+                <td class="close-column">
+                  <span class="fas fa-times icon close-icon"></span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="transaction-name">Lorem, ipsum dolor.</p>
+                </td>
+                <td class="transaction-icon">
+                  <span class="fas fa-tshirt icon clothes-icon"></span>
+                </td>
+                <td>
+                  <h4 class="transaction-value">300 PLN</h4>
+                </td>
+                <td class="close-column">
+                  <span class="fas fa-times icon close-icon"></span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="transaction-name">Lorem, ipsum dolor.</p>
+                </td>
+                <td class="transaction-icon">
+                  <span class="fas fa-tshirt icon clothes-icon"></span>
+                </td>
+                <td>
+                  <h4 class="transaction-value">300 PLN</h4>
+                </td>
+                <td class="close-column">
+                  <span class="fas fa-times icon close-icon"></span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="transaction-name">Lorem, ipsum dolor.</p>
+                </td>
+                <td class="transaction-icon">
+                  <span class="fas fa-tshirt icon clothes-icon"></span>
+                </td>
+                <td>
+                  <h4 class="transaction-value">300 PLN</h4>
+                </td>
+                <td class="close-column">
+                  <span class="fas fa-times icon close-icon"></span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="transaction-name">Lorem, ipsum dolor.</p>
+                </td>
+                <td class="transaction-icon">
+                  <span class="fas fa-tshirt icon clothes-icon"></span>
+                </td>
+                <td>
+                  <h4 class="transaction-value">300 PLN</h4>
+                </td>
+                <td class="close-column">
+                  <span class="fas fa-times icon close-icon"></span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="transaction-name">Lorem, ipsum dolor.</p>
+                </td>
+                <td class="transaction-icon">
+                  <span class="fas fa-tshirt icon clothes-icon"></span>
+                </td>
+                <td>
+                  <h4 class="transaction-value">300 PLN</h4>
+                </td>
+                <td class="close-column">
+                  <span class="fas fa-times icon close-icon"></span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Copytights &copy; TukanDesign</p>
+    </footer>
+  </body>
+</html>
