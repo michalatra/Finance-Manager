@@ -908,7 +908,7 @@ input.settings-input {
   row-gap: 1.5rem;
   column-gap: 1.5rem;
   padding: 15px;
-  max-width: 1400px;
+  max-width: 1200px;
   grid-template-columns: 100%;
   grid-template-areas: "savings-header" "savings-stats" "add-saving" "savings-summary";
 }
@@ -923,14 +923,14 @@ input.settings-input {
   }
 }
 
-@media screen and (min-width: 1050px) {
+/* @media screen and (min-width: 1050px) {
   .savings-grid {
     grid-template-columns: 33fr 33fr 33fr;
     grid-template-areas:
       "savings-header savings-header savings-header"
       "savings-stats add-saving savings-summary";
   }
-}
+} */
 
 .savings-header {
   grid-area: savings-header;

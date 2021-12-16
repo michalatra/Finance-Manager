@@ -1,6 +1,7 @@
 import React from "react";
 import AddSaving from "./addSaving";
 import SavingsSummary from "./savingsSummary";
+import SavingsTable from "./savingsTable";
 
 class SavingsPage extends React.Component {
   state = {
@@ -26,9 +27,7 @@ class SavingsPage extends React.Component {
           </h2>
           <SavingsSummary totalSavings={user.totalSavings} />
           <AddSaving />
-          <div className="container savings-summary-container">
-            <h4 className="container-header">Historia wpłat</h4>
-          </div>
+          <SavingsTable />
         </div>
       </main>
     );

@@ -1,4 +1,5 @@
 import React from "react";
+import Chart from "./chart";
 
 const TimeContainer = () => {
   const currentDate = new Date();
@@ -17,9 +18,18 @@ const TimeContainer = () => {
           {day}/{maxDays}
         </h3>
       </div>
-      <div className="chart time-chart">
-        <div className="chart-inside"></div>
-      </div>
+      <Chart
+        percentages={[
+          {
+            color: "#ee4266",
+            value: (day * 100) / maxDays + "%",
+          },
+          {
+            color: "#ffd23f",
+            value: (day * 100) / maxDays + "%",
+          },
+        ]}
+      />
     </div>
   );
 };

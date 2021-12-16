@@ -94,7 +94,15 @@ class PanelPage extends React.Component {
       <main>
         <div className="panel-grid">
           <Saldo totalSpent={totalSpent} totalBudget={user.monthlyBudget} />
-          <ExpensesType />
+          <ExpensesType
+            foodSpending={foodSpending}
+            entertainmentSpending={entertainmentSpending}
+            clothingSpending={clothingSpending}
+            feesSpending={feesSpending}
+            electronicsSpending={electronicsSpending}
+            otherSpending={otherSpending}
+            totalSpent={totalSpent}
+          />
           <CategorySymmary
             foodSpending={foodSpending}
             entertainmentSpending={entertainmentSpending}

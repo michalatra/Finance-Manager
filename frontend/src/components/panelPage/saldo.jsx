@@ -1,6 +1,7 @@
 import React from "react";
+import Chart from "./chart";
 
-const Saldo = ({totalBudget, totalSpent}) => {
+const Saldo = ({ totalBudget, totalSpent }) => {
   return (
     <div className="container saldo-container">
       <div className="saldo-section">
@@ -16,9 +17,18 @@ const Saldo = ({totalBudget, totalSpent}) => {
           <p className="saldo-stats-title">Wydano</p>
           <h3 className="saldo-stats-value">{totalSpent} zł</h3>
         </div>
-        <div className="chart saldo-chart">
-          <div className="chart-inside"></div>
-        </div>
+        <Chart
+          percentages={[
+            {
+              color: "#961818",
+              value: (totalSpent * 100) / totalBudget + "%",
+            },
+            {
+              color: "#24591e",
+              value: (totalSpent * 100) / totalBudget + "%",
+            },
+          ]}
+        />
       </div>
     </div>
   );

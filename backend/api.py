@@ -1,16 +1,15 @@
 from os import remove
 from flask import Blueprint, request, jsonify
 import json
-from .dbBlueprints import Expense
-from .database import expenses, savings, goals, users
+from dbBlueprints import Expense, db, User
+from database import expenses, savings, goals
+from main import registerBlueprint
 
 api = Blueprint("api", __name__)
+registerBlueprint(api)
 
 def find_user(id):
-    for user in users:
-        if user.id == id:
-            return user
-    return False
+    return db.session.query(User).filter_by(id=id).first()
 
 def findExpenses(userId):
     expensesFound = []
@@ -108,5 +107,3 @@ def updateUserSettings():
         }
         return jsonify({"response": "success"})
     return jsonify({"response": "error"})
-
-    
